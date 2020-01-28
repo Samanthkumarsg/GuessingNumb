@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+:root{
+    --primary:deepskyblue;
+    --secondary:#444;
+    --background:#212121;
+    --font:'Poppins', sans-serif;
+}
+
+body{
+    background: var(--background);
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    height:50px;
+    width:100%;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header small{
+    margin-left: 10px;
+    color:#fff;
+    letter-spacing: 2px;
+}
+
+main{
+    background: #ebebeb;
+    min-height: 20vh;
+    width: 25%;
+    margin: 100px auto;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 32px;
+    box-shadow: 20px 20px 0px 0px rgba(0,0,0,0.23);    
+}
+
+main h5{
+    font:0.9em var(--font);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+label{
+    font:0.8em var(--font);
+    padding:8px 0px;
+}
+
+.play-btn{
+    background: #fff;
+    padding: 8px 32px;
+    border-radius: 4px;
+    outline:none;
+    border:2px solid var(--secondary);
+    font:0.8em var(--font);
+    align-self: flex-start;
+    margin: 20px 0px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.play-btn:hover{
+    background: var(--background);
+    border:2px solid var(--background);
+    color:#fff;
+    transition: .2s ease;
+}
+
+
+#game-input{
+    padding: 8px 32px;
+    border-radius: 4px;
+    outline:none;
+    border:2px solid var(--secondary);
+}
+
+@keyframes shake{
+    1%{
+        transform: translateX(-10px);
+    }
+    25%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(-5px);
+    }
+}
+
+/*Responsive */
+
+@media only screen and (max-width: 601px) {
+    main{
+        width: 60%;
+    }
+}
