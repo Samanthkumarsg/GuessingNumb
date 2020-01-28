@@ -14,7 +14,8 @@ window.onload = function(){
             let randomNumber = Math.floor(Math.random()*10);
             console.log(`${randomNumber} vs ${gameInput.value}`);
             if(randomNumber==gameInput.value)
-            {
+            {                
+                main.style.borderBottom="4px solid lawngreen";
                 console.log("You Win");
                 won();
                 setInterval(reload,4000);

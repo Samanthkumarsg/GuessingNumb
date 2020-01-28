@@ -45,12 +45,14 @@ main h5{
     font:0.9em var(--font);
     letter-spacing: 2px;
     text-align: center;
+    user-select: none;
 }
 
 
 label{
     font:0.8em var(--font);
     padding:8px 0px;
+    user-select: none;
 }
 
 .play-btn{
